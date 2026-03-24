@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>My Digital Resume</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Vivek</a>
+
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navMenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown">More</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#projects">Projects</a></li>
+                            <li><a class="dropdown-item" href="#contact">Contact</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section id="home" class="container-fluid bg-primary text-white text-center p-5">
+        <h1 class="display-4">Hi, I'm Navya Sri</h1>
+        <p class="lead">Web Developer | AI Enthusiast</p>
+
+        <p class="d-none d-md-block">Visible only on medium screens+</p>
+
+        <button class="btn btn-light" data-bs-toggle="tooltip" title="Hire me!">
+            <i class="bi bi-person"></i> Hire Me
+        </button>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="container p-5">
+        <div class="row">
+            <div class="col-md-6">
+                <img src="images/profile.jpg" class="img-fluid rounded">
+            </div>
+
+            <div class="col-md-6">
+                <h2>About Me</h2>
+                <p>I am a CSE student focused on AI, Cybersecurity and Development.</p>
+
+                <div class="alert alert-success">Available for internships!</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GRID DEMO -->
+    <section class="container p-5">
+        <h2>Grid Demo</h2>
+        <div class="row">
+            <div class="col-md-4 offset-md-2 order-md-2 bg-light p-3">Box 1</div>
+            <div class="col-md-4 order-md-1 bg-secondary text-white p-3">Box 2</div>
+        </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="container p-5">
+        <h2>Skills</h2>
+
+        <span class="badge bg-primary">HTML</span>
+        <span class="badge bg-success">CSS</span>
+        <span class="badge bg-warning">JavaScript</span>
+
+        <div class="mt-3">
+            <label>HTML</label>
+            <div class="progress">
+                <div class="progress-bar" style="width: 90%">90%</div>
+            </div>
+
+            <label>JavaScript</label>
+            <div class="progress">
+                <div class="progress-bar bg-success" style="width: 70%">70%</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="container p-5">
+        <h2>Projects</h2>
+
+        <div class="row g-3">
+            <div class="col-md-6 col-lg-4">
+                <div class="card">
+                    <img src="images/profile.jpg" class="card-img-top img-thumbnail">
+                    <div class="card-body">
+                        <h5>Project 1</h5>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#projectModal">
+                            View
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MODAL -->
+    <div class="modal fade" id="projectModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5>Project Details</h5>
+                    <button class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    Project description here.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- EDUCATION -->
+    <section class="container p-5">
+        <h2>Education</h2>
+
+        <ul class="list-group mb-3">
+            <li class="list-group-item">B.Tech - RGUKT</li>
+            <li class="list-group-item">Intermediate</li>
+        </ul>
+
+        <div class="table-responsive">
+            <table class="table table-bordered">
+                <tr>
+                    <th>Year</th>
+                    <th>Institution</th>
+                </tr>
+                <tr>
+                    <td>2024</td>
+                    <td>RGUKT</td>
+                </tr>
+            </table>
+        </div>
+    </section>
+
+    <!-- CAROUSEL -->
+    <section class="container p-5">
+        <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/profile.jpg" class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/profile.jpg" class="d-block w-100">
+                </div>
+            </div>
+
+            <button class="carousel-control-prev" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+
+            <button class="carousel-control-next" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+    </section>
+
+    <!-- ACCORDION -->
+    <section class="container p-5">
+        <div class="accordion">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                        More Info
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show">
+                    <div class="accordion-body">Extra content</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- POPOVER -->
+    <section class="container p-5 text-center">
+        <button class="btn btn-info" data-bs-toggle="popover" title="Info" data-bs-content="Popover working">
+            Click Popover
+        </button>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="container p-5">
+        <h2>Contact</h2>
+
+        <form>
+
+            <input type="text" class="form-control mb-2" placeholder="Name">
+            <input type="email" class="form-control mb-2" placeholder="Email">
+            <input type="password" class="form-control mb-2" placeholder="Password">
+
+            <div class="input-group mb-2">
+                <span class="input-group-text">@</span>
+                <input type="text" class="form-control" placeholder="Username">
+            </div>
+
+            <select class="form-select mb-2">
+                <option>Select</option>
+                <option>Internship</option>
+            </select>
+
+            <textarea class="form-control mb-2"></textarea>
+
+            <div>
+                <input type="radio" name="g"> Male
+                <input type="radio" name="g"> Female
+            </div>
+
+            <div class="form-check">
+                <input type="checkbox" class="form-check-input">
+                <label>Agree</label>
+            </div>
+
+            <input class="form-control is-valid mb-2" placeholder="Valid">
+            <input class="form-control is-invalid mb-2" placeholder="Invalid">
+
+            <button class="btn btn-success mt-2">Submit</button>
+
+        </form>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-dark text-white text-center p-3">
+        <i class="bi bi-github"></i>
+        <i class="bi bi-linkedin"></i>
+    </footer>
+
+    <!-- JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
